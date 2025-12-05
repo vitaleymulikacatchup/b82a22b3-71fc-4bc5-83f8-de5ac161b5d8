@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     siteName: "Gloria Restaurant",
     type: "website",
     images: [{
-      url: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_34my1kGeblbsCcwUUCcjBY9WFkg/uploaded-1764930225160-rvncmjqv.jpg",
+      url: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_34my1kGeblbsCcwUUCcjBY9WFkg/uploaded-1764930863722-au866527.jpg",
       alt: "Gloria Restaurant Fine Dining"
     }]
   },
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Gloria Restaurant - Fine Dining Excellence",
     description: "Experience elevated cuisine at Gloria. Award-winning restaurant serving exquisite dishes.",
-    images: ["https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_34my1kGeblbsCcwUUCcjBY9WFkg/uploaded-1764930225160-rvncmjqv.jpg"]
+    images: ["https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_34my1kGeblbsCcwUUCcjBY9WFkg/uploaded-1764930863722-au866527.jpg"]
   },
   robots: {
     index: true,

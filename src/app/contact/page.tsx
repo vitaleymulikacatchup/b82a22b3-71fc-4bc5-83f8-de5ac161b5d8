@@ -1,10 +1,10 @@
 "use client";
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
+import Link from "next/link";
 import NavbarLayoutFloatingOverlay from '@/components/navbar/NavbarLayoutFloatingOverlay/NavbarLayoutFloatingOverlay';
 import ContactCenterForm from '@/components/sections/contact/ContactCenterForm';
 import FooterBaseReveal from '@/components/sections/footer/FooterBaseReveal';
-import Link from "next/link";
 
 export default function ContactPage() {
   return (
@@ -23,21 +23,24 @@ export default function ContactPage() {
       <div id="nav" data-section="nav">
         <NavbarLayoutFloatingOverlay
           brandName="Gloria"
-          logoSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_34my1kGeblbsCcwUUCcjBY9WFkg/uploaded-1764930223755-agjx1vvq.jpg"
+          logoSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_34my1kGeblbsCcwUUCcjBY9WFkg/uploaded-1764930862436-twiyu224.jpg"
           logoAlt="Gloria Restaurant"
           navItems={[
+            { name: "Home", id: "/" },
             { name: "Menu", id: "/menu" },
             { name: "About", id: "/about" },
-            { name: "Experience", id: "/experience" },
             { name: "Reviews", id: "/reviews" },
             { name: "Contact", id: "/contact" }
           ]}
-          button={{ text: "Reserve Table", href: "/contact" }}
+          button={{
+            text: "Reserve Table",
+            href: "/contact"
+          }}
           buttonClassName="font-semibold"
           buttonTextClassName="text-sm"
         />
       </div>
-      
+
       <div id="contact" data-section="contact">
         <ContactCenterForm
           title="Reserve Your Table"
@@ -78,9 +81,9 @@ export default function ContactPage() {
           buttonText="Confirm Reservation"
         />
       </div>
-      
+
       <FooterBaseReveal
-        logoSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_34my1kGeblbsCcwUUCcjBY9WFkg/uploaded-1764930223755-agjx1vvq.jpg"
+        logoSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_34my1kGeblbsCcwUUCcjBY9WFkg/uploaded-1764930862436-twiyu224.jpg"
         logoWidth={40}
         logoHeight={40}
         copyrightText="© 2025 Gloria Restaurant. All rights reserved."
@@ -88,8 +91,8 @@ export default function ContactPage() {
           {
             title: "Restaurant",
             items: [
+              { label: "Home", href: "/" },
               { label: "Menu", href: "/menu" },
-              { label: "Reserve", href: "/contact" },
               { label: "About", href: "/about" }
             ]
           },

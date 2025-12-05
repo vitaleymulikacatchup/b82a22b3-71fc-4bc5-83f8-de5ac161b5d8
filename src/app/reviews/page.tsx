@@ -1,11 +1,11 @@
 "use client";
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
+import { Heart } from "lucide-react";
+import Link from "next/link";
 import NavbarLayoutFloatingOverlay from '@/components/navbar/NavbarLayoutFloatingOverlay/NavbarLayoutFloatingOverlay';
 import TestimonialCardTwo from '@/components/sections/testimonial/TestimonialCardTwo';
 import FooterBaseReveal from '@/components/sections/footer/FooterBaseReveal';
-import Link from "next/link";
-import { Heart } from "lucide-react";
 
 export default function ReviewsPage() {
   return (
@@ -24,21 +24,24 @@ export default function ReviewsPage() {
       <div id="nav" data-section="nav">
         <NavbarLayoutFloatingOverlay
           brandName="Gloria"
-          logoSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_34my1kGeblbsCcwUUCcjBY9WFkg/uploaded-1764930223755-agjx1vvq.jpg"
+          logoSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_34my1kGeblbsCcwUUCcjBY9WFkg/uploaded-1764930862436-twiyu224.jpg"
           logoAlt="Gloria Restaurant"
           navItems={[
+            { name: "Home", id: "/" },
             { name: "Menu", id: "/menu" },
             { name: "About", id: "/about" },
-            { name: "Experience", id: "/experience" },
             { name: "Reviews", id: "/reviews" },
             { name: "Contact", id: "/contact" }
           ]}
-          button={{ text: "Reserve Table", href: "/contact" }}
+          button={{
+            text: "Reserve Table",
+            href: "/contact"
+          }}
           buttonClassName="font-semibold"
           buttonTextClassName="text-sm"
         />
       </div>
-      
+
       <div id="reviews" data-section="reviews">
         <TestimonialCardTwo
           title="Guest Reviews"
@@ -50,7 +53,7 @@ export default function ReviewsPage() {
               role: "Frequent Guest",
               testimonial: "An absolutely exquisite dining experience. Every detail from the presentation to the flavors was perfection. We'll be returning every month.",
               icon: Heart,
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_34my1kGeblbsCcwUUCcjBY9WFkg/uploaded-1764930231240-zrrsu11r.png",
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_34my1kGeblbsCcwUUCcjBY9WFkg/uploaded-1764930868366-nppt803g.png",
               imageAlt: "Sarah Mitchell"
             },
             {
@@ -59,7 +62,7 @@ export default function ReviewsPage() {
               role: "Special Events",
               testimonial: "Gloria provided the perfect setting for our anniversary celebration. Outstanding service and remarkable cuisine made it unforgettable.",
               icon: Heart,
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_34my1kGeblbsCcwUUCcjBY9WFkg/uploaded-1764930232841-sbscmqsv.jpg",
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_34my1kGeblbsCcwUUCcjBY9WFkg/uploaded-1764930869558-034soocd.jpg",
               imageAlt: "Michael Chen"
             },
             {
@@ -68,7 +71,7 @@ export default function ReviewsPage() {
               role: "Regular Diner",
               testimonial: "The attention to detail is remarkable. From presentation to taste, every dish tells a story. This is fine dining at its best.",
               icon: Heart,
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_34my1kGeblbsCcwUUCcjBY9WFkg/uploaded-1764930234123-9g2a65kn.jpg",
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_34my1kGeblbsCcwUUCcjBY9WFkg/uploaded-1764930870441-7vmf3bdq.jpg",
               imageAlt: "Emily Rodriguez"
             },
             {
@@ -77,7 +80,7 @@ export default function ReviewsPage() {
               role: "Food Critic",
               testimonial: "Gloria stands out as a beacon of culinary excellence. The chef's creativity combined with impeccable execution creates memorable moments.",
               icon: Heart,
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_34my1kGeblbsCcwUUCcjBY9WFkg/uploaded-1764930235503-b97bv966.jpg",
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_34my1kGeblbsCcwUUCcjBY9WFkg/uploaded-1764930871402-d0bbmke4.jpg",
               imageAlt: "James Patterson"
             },
             {
@@ -86,7 +89,7 @@ export default function ReviewsPage() {
               role: "Corporate Events",
               testimonial: "We hosted our company dinner here and were blown away. The team accommodated all requests gracefully while maintaining exceptional standards.",
               icon: Heart,
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_34my1kGeblbsCcwUUCcjBY9WFkg/uploaded-1764930236629-ex21bpwd.jpg",
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_34my1kGeblbsCcwUUCcjBY9WFkg/uploaded-1764930872329-2rhfwuge.jpg",
               imageAlt: "Victoria Scott"
             },
             {
@@ -95,7 +98,7 @@ export default function ReviewsPage() {
               role: "Weekly Guest",
               testimonial: "Gloria has become our favorite destination. The consistency in quality and the warmth of hospitality keep us coming back.",
               icon: Heart,
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_34my1kGeblbsCcwUUCcjBY9WFkg/uploaded-1764930237973-jttrd3gc.jpg",
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_34my1kGeblbsCcwUUCcjBY9WFkg/uploaded-1764930873350-ragde4ii.jpg",
               imageAlt: "David Thompson"
             }
           ]}
@@ -105,9 +108,9 @@ export default function ReviewsPage() {
           useInvertedBackground="noInvert"
         />
       </div>
-      
+
       <FooterBaseReveal
-        logoSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_34my1kGeblbsCcwUUCcjBY9WFkg/uploaded-1764930223755-agjx1vvq.jpg"
+        logoSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_34my1kGeblbsCcwUUCcjBY9WFkg/uploaded-1764930862436-twiyu224.jpg"
         logoWidth={40}
         logoHeight={40}
         copyrightText="© 2025 Gloria Restaurant. All rights reserved."
@@ -115,8 +118,8 @@ export default function ReviewsPage() {
           {
             title: "Restaurant",
             items: [
+              { label: "Home", href: "/" },
               { label: "Menu", href: "/menu" },
-              { label: "Reserve", href: "/contact" },
               { label: "About", href: "/about" }
             ]
           },
